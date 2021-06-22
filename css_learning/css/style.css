@@ -1,0 +1,87 @@
+h5{
+font-weight: lighter;
+color:yellow;
+background-color: black;
+font-size: large;
+padding: 0.1%;
+border-radius: 20px;
+
+
+}
+
+ol{
+color: #35c3ee;
+font-family: 'Courier New', Courier, monospace;
+letter-spacing: 10px;
+word-spacing: 20px;
+line-height: 1.6em;
+}
+
+body{
+color: violet;
+background-color: black;
+
+}
+
+h4{
+font-size: 40px;
+
+}
+
+.table{
+text-align: center;
+
+
+}
+th,td{
+
+    border: 1px solid #999;
+  border-collapse: collapse;
+   
+
+}
+
+
+
+.para{
+width: 80%;
+
+
+
+
+}
+
+
+ a{
+
+    text-decoration-line: none;
+color: rgb(156, 156, 156);
+
+}
+
+a:hover{
+
+    color: red;
+}
+a:active{
+    color: seashell;
+}
+a{
+
+border: blue 1px solid;
+
+}
+
+
+ul{
+
+list-style: lower-roman;
+
+
+}
+
+li{
+
+border:palegoldenrod 1px solid;
+
+}
