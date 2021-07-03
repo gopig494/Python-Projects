@@ -162,18 +162,21 @@ for i in orl:
 										ab=img.get("data-src")
 										if ab:
 											try:
-												os.makedirs(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}")
-												ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
-												st=requests.get(ab)
-												sleep(2)
-												ac.write(st.content)
-												sleep(1)
-											except FileExistsError:
-												ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
-												st=requests.get(ab)
-												sleep(2)
-												ac.write(st.content)
-												sleep(1)
+												try:
+													os.makedirs(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}")
+													ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
+													st=requests.get(ab)
+													sleep(2)
+													ac.write(st.content)
+													sleep(1)
+												except FileExistsError:
+													ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
+													st=requests.get(ab)
+													sleep(2)
+													ac.write(st.content)
+													sleep(1)
+											except:
+												pass
 							else:
 								print("Pange Not Found")	       
 				else:		
@@ -252,18 +255,21 @@ for i in orl:
 										ab=img.get("data-src")
 										if ab:
 											try:
-												os.makedirs(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}")
-												ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
-												st=requests.get(ab)
-												sleep(2)
-												ac.write(st.content)
-												sleep(1)
-											except FileExistsError:
-												ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
-												st=requests.get(ab)
-												sleep(2)
-												ac.write(st.content)
-												sleep(1)
+												try:
+													os.makedirs(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}")
+													ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
+													st=requests.get(ab)
+													sleep(2)
+													ac.write(st.content)
+													sleep(1)
+												except FileExistsError:
+													ac=open(f"/home/gopi/Pictures/ScrapImages/{category[hi]}/{pub}/{tit}.jpg","wb")
+													st=requests.get(ab)
+													sleep(2)
+													ac.write(st.content)
+													sleep(1)
+											except:
+												pass
 							else:
 								print("Pange Not Found")	       
 				else:		
@@ -299,5 +305,22 @@ print("Scraping Completed ")
 print("Check The nammabooks.csv File For Details")
 
                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
